@@ -2,6 +2,11 @@ matplotlib
 seaborn
 numpy
 pandas
+pandas-stubs
 scipy
+scipy-stubs
 scikit-learn
 statsmodels
+neurodsp
+mne
+pynapple
