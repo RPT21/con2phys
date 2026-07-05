@@ -13,22 +13,22 @@
   
   <style>
     :root {
-      --bg-primary: #080c14;
-      --bg-secondary: #0f172a;
-      --bg-card: #1e293b;
-      --accent-blue: #3b82f6;
-      --accent-purple: #8b5cf6;
-      --accent-emerald: #10b981;
-      --accent-coral: #ef4444;
-      --accent-amber: #f59e0b;
-      --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: #ffffff;
+      --accent-blue: #2563eb;
+      --accent-purple: #7c3aed;
+      --accent-emerald: #059669;
+      --accent-coral: #dc2626;
+      --accent-amber: #d97706;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
       --text-muted: #64748b;
-      --border-color: #334155;
+      --border-color: #e2e8f0;
       --font-display: 'Outfit', sans-serif;
       --font-body: 'Inter', sans-serif;
       --font-code: 'Fira Code', monospace;
-      --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     }
 
     * {
@@ -46,7 +46,7 @@
     }
 
     header {
-      background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+      background: linear-gradient(135deg, #eff6ff 0%, #f1f5f9 100%);
       border-bottom: 1px solid var(--border-color);
       padding: 40px 20px;
       text-align: center;
@@ -61,7 +61,7 @@
       left: -20%;
       width: 140%;
       height: 200%;
-      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.04) 0%, transparent 60%);
       pointer-events: none;
     }
 
@@ -76,7 +76,7 @@
       font-family: var(--font-display);
       font-size: 2.5rem;
       font-weight: 800;
-      background: linear-gradient(to right, #a78bfa, #3b82f6);
+      background: linear-gradient(to right, #7c3aed, #2563eb);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 10px;
@@ -94,9 +94,9 @@
     .meta-badge {
       display: inline-flex;
       align-items: center;
-      background-color: rgba(59, 130, 246, 0.15);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      color: #93c5fd;
+      background-color: rgba(37, 99, 235, 0.08);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      color: #1d4ed8;
       padding: 6px 16px;
       border-radius: 9999px;
       font-size: 0.85rem;
@@ -139,13 +139,13 @@
 
     .tab-btn:hover {
       color: var(--text-primary);
-      background-color: rgba(255, 255, 255, 0.03);
+      background-color: rgba(0, 0, 0, 0.03);
     }
 
     .tab-btn.active {
       background-color: var(--accent-blue);
-      color: var(--text-primary);
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
     }
 
     /* Tab Content Switcher */
@@ -184,7 +184,8 @@
 
     .card:hover {
       transform: translateY(-2px);
-      border-color: #475569;
+      border-color: #cbd5e1;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 10px 10px -6px rgba(0, 0, 0, 0.04);
     }
 
     .card::before {
@@ -227,14 +228,14 @@
       margin-bottom: 15px;
     }
 
-    .badge-purple { background-color: rgba(139, 92, 246, 0.15); color: #c084fc; border: 1px solid rgba(139, 92, 246, 0.3); }
-    .badge-amber { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
-    .badge-emerald { background-color: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-purple { background-color: rgba(124, 58, 237, 0.08); color: #6d28d9; border: 1px solid rgba(124, 58, 237, 0.2); }
+    .badge-amber { background-color: rgba(217, 119, 6, 0.08); color: #b45309; border: 1px solid rgba(217, 119, 6, 0.2); }
+    .badge-emerald { background-color: rgba(5, 150, 105, 0.08); color: #047857; border: 1px solid rgba(5, 150, 105, 0.2); }
 
     .card-stat {
       margin-top: 15px;
       padding-top: 15px;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .stat-label {
@@ -287,7 +288,7 @@
     }
 
     .methodology-box {
-      background-color: rgba(30, 41, 59, 0.4);
+      background-color: #f1f5f9;
       border: 1px solid var(--border-color);
       border-radius: 12px;
       padding: 24px;
@@ -342,7 +343,7 @@
     }
 
     th {
-      background-color: rgba(15, 23, 42, 0.8);
+      background-color: #f1f5f9;
       color: var(--text-primary);
       font-family: var(--font-display);
       font-weight: 600;
@@ -352,9 +353,9 @@
 
     td {
       padding: 14px 16px;
-      border-bottom: 1px dotted var(--border-color);
+      border-bottom: 1px solid var(--border-color);
       color: var(--text-secondary);
-      background-color: rgba(15, 23, 42, 0.2);
+      background-color: #ffffff;
     }
 
     tr:last-child td {
@@ -362,7 +363,7 @@
     }
 
     tr.highlight-row td {
-      background-color: rgba(59, 130, 246, 0.05);
+      background-color: rgba(37, 99, 235, 0.05);
       color: var(--text-primary);
       font-weight: 500;
     }
@@ -386,7 +387,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #0b0f19;
+      background-color: #f1f5f9;
       border: 1px solid var(--border-color);
       border-bottom: none;
       border-top-left-radius: 8px;
@@ -403,7 +404,7 @@
     }
 
     pre {
-      background-color: #05070c;
+      background-color: #f8fafc;
       border: 1px solid var(--border-color);
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
@@ -416,16 +417,16 @@
     code {
       font-family: var(--font-code);
       font-size: 0.88rem;
-      color: #e2e8f0;
+      color: var(--text-primary);
     }
 
     /* Custom inline styles for Python syntax highlighting */
-    .hl-keyword { color: #f43f5e; font-weight: bold; }
-    .hl-def { color: #8b5cf6; font-weight: bold; }
-    .hl-str { color: #10b981; }
-    .hl-num { color: #f59e0b; }
+    .hl-keyword { color: #be123c; font-weight: bold; }
+    .hl-def { color: #6d28d9; font-weight: bold; }
+    .hl-str { color: #047857; }
+    .hl-num { color: #b45309; }
     .hl-comment { color: #64748b; font-style: italic; }
-    .hl-builtin { color: #3b82f6; }
+    .hl-builtin { color: #1d4ed8; }
 
     /* SVG Chart Containers */
     .chart-box {
@@ -457,8 +458,8 @@
 
     /* Alert Banner */
     .alert-banner {
-      background: linear-gradient(90deg, rgba(239, 68, 68, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
-      border: 1px solid rgba(239, 68, 68, 0.25);
+      background: linear-gradient(90deg, rgba(220, 38, 38, 0.06) 0%, rgba(217, 119, 6, 0.03) 100%);
+      border: 1px solid rgba(220, 38, 38, 0.15);
       border-radius: 12px;
       padding: 16px 20px;
       margin-bottom: 30px;
@@ -475,7 +476,7 @@
     }
 
     .alert-content p strong {
-      color: #f87171;
+      color: #dc2626;
     }
   </style>
   <!-- MathJax for rendering LaTeX equations -->
@@ -720,44 +721,46 @@
           <div class="chart-container">
             <svg viewBox="0 0 400 240" width="100%" height="100%">
               <!-- Grid lines -->
-              <line x1="60" y1="40" x2="360" y2="40" stroke="#334155" stroke-dasharray="3,3" />
-              <line x1="60" y1="90" x2="360" y2="90" stroke="#334155" stroke-dasharray="3,3" />
-              <line x1="60" y1="140" x2="360" y2="140" stroke="#334155" stroke-dasharray="3,3" />
-              <line x1="60" y1="190" x2="360" y2="190" stroke="#334155" />
+              <line x1="60" y1="40" x2="360" y2="40" stroke="#e2e8f0" stroke-dasharray="3,3" />
+              <line x1="60" y1="90" x2="360" y2="90" stroke="#e2e8f0" stroke-dasharray="3,3" />
+              <line x1="60" y1="140" x2="360" y2="140" stroke="#e2e8f0" stroke-dasharray="3,3" />
+              <line x1="60" y1="190" x2="360" y2="190" stroke="#cbd5e1" />
               
               <!-- Y Axis labels -->
-              <text x="50" y="44" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">60</text>
-              <text x="50" y="94" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">40</text>
-              <text x="50" y="144" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">20</text>
-              <text x="50" y="194" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">0</text>
+              <text x="50" y="44" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">60</text>
+              <text x="50" y="94" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">40</text>
+              <text x="50" y="144" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">20</text>
+              <text x="50" y="194" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">0</text>
               
               <!-- Bars -->
               <!-- Area 1: 56.2 (height: 56.2 * 2.5 = 140.5px. y: 190 - 140.5 = 49.5) -->
-              <rect x="90" y="49.5" width="40" height="140.5" fill="#8b5cf6" opacity="0.8" rx="4" />
-              <line x1="110" y1="19" x2="110" y2="79" stroke="#c084fc" stroke-width="2" />
-              <line x1="100" y1="19" x2="120" y2="19" stroke="#c084fc" stroke-width="2" />
-              <line x1="100" y1="79" x2="120" y2="79" stroke="#c084fc" stroke-width="2" />
-              <text x="110" y="45" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">56.20</text>
+              <rect x="90" y="49.5" width="40" height="140.5" fill="#7c3aed" opacity="0.8" rx="4" />
+              <line x1="110" y1="19" x2="110" y2="79" stroke="#7c3aed" stroke-width="2" />
+              <line x1="100" y1="19" x2="120" y2="19" stroke="#7c3aed" stroke-width="2" />
+              <line x1="100" y1="79" x2="120" y2="79" stroke="#7c3aed" stroke-width="2" />
+              <text x="110" y="45" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">56.20</text>
 
               <!-- Area 2: 48.9 (height: 48.9 * 2.5 = 122.25px. y: 190 - 122.25 = 67.75) -->
-              <rect x="180" y="67.75" width="40" height="122.25" fill="#3b82f6" opacity="0.6" rx="4" />
-              <line x1="200" y1="34" x2="200" y2="96" stroke="#93c5fd" stroke-width="2" />
-              <line x1="190" y1="34" x2="210" y2="34" stroke="#93c5fd" stroke-width="2" />
-              <line x1="190" y1="96" x2="210" y2="96" stroke="#93c5fd" stroke-width="2" />
-              <text x="200" y="63" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">48.93</text>
+              <rect x="180" y="67.75" width="40" height="122.25" fill="#2563eb" opacity="0.8" rx="4" />
+              <line x1="200" y1="34" x2="200" y2="96" stroke="#2563eb" stroke-width="2" />
+              <line x1="190" y1="34" x2="210" y2="34" stroke="#2563eb" stroke-width="2" />
+              <line x1="190" y1="96" x2="210" y2="96" stroke="#2563eb" stroke-width="2" />
+              <text x="200" y="63" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">48.93</text>
 
               <!-- Area 3: 37.1 (height: 37.1 * 2.5 = 92.75px. y: 190 - 92.75 = 97.25) -->
-              <rect x="270" y="97.25" width="40" height="92.75" fill="#64748b" opacity="0.6" rx="4" />
-              <line x1="290" y1="72" x2="290" y2="115" stroke="#cbd5e1" stroke-width="2" />
-              <line x1="280" y1="72" x2="300" y2="72" stroke="#cbd5e1" stroke-width="2" />
-              <line x1="280" y1="115" x2="300" y2="115" stroke="#cbd5e1" stroke-width="2" />
-              <text x="290" y="92" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">37.12</text>
+              <rect x="270" y="97.25" width="40" height="92.75" fill="#64748b" opacity="0.8" rx="4" />
+              <line x1="290" y1="72" x2="290" y2="115" stroke="#64748b" stroke-width="2" />
+              <line x1="280" y1="72" x2="300" y2="72" stroke="#64748b" stroke-width="2" />
+              <line x1="280" y1="115" x2="300" y2="115" stroke="#64748b" stroke-width="2" />
+              <text x="290" y="92" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">37.12</text>
               
               <!-- X Axis Labels -->
-              <text x="110" y="215" fill="#e2e8f0" font-size="11" font-family="sans-serif" text-anchor="middle">Area 1</text>
-              <text x="200" y="215" fill="#e2e8f0" font-size="11" font-family="sans-serif" text-anchor="middle">Area 2</text>
-              <text x="290" y="215" fill="#e2e8f0" font-size="11" font-family="sans-serif" text-anchor="middle">Area 3</text>
+              <text x="110" y="215" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">Area 1</text>
+              <text x="200" y="215" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">Area 2</text>
+              <text x="290" y="215" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">Area 3</text>
             </svg>
+          </div>
+        </div>
           </div>
         </div>
 
@@ -865,41 +868,41 @@
           <div class="chart-container">
             <svg viewBox="0 0 400 240" width="100%" height="100%">
               <!-- Grid lines -->
-              <line x1="60" y1="40" x2="360" y2="40" stroke="#334155" stroke-dasharray="3,3" />
-              <line x1="60" y1="115" x2="360" y2="115" stroke="#334155" stroke-dasharray="3,3" />
-              <line x1="60" y1="190" x2="360" y2="190" stroke="#334155" />
+              <line x1="60" y1="40" x2="360" y2="40" stroke="#e2e8f0" stroke-dasharray="3,3" />
+              <line x1="60" y1="115" x2="360" y2="115" stroke="#e2e8f0" stroke-dasharray="3,3" />
+              <line x1="60" y1="190" x2="360" y2="190" stroke="#cbd5e1" />
               
               <!-- Y Axis labels -->
-              <text x="50" y="44" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">0.10</text>
-              <text x="50" y="119" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">0.05</text>
-              <text x="50" y="194" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">0.00</text>
+              <text x="50" y="44" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">0.10</text>
+              <text x="50" y="119" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">0.05</text>
+              <text x="50" y="194" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">0.00</text>
               
               <!-- Bars -->
               <!-- Area 1: 0.0397 (height: 0.0397 * 1500 = 59.5px. y: 190 - 59.5 = 130.5) -->
-              <rect x="90" y="130.5" width="40" height="59.5" fill="#64748b" opacity="0.6" rx="4" />
-              <line x1="110" y1="121" x2="110" y2="139" stroke="#cbd5e1" stroke-width="2" />
-              <line x1="100" y1="121" x2="120" y2="121" stroke="#cbd5e1" stroke-width="2" />
-              <line x1="100" y1="139" x2="120" y2="139" stroke="#cbd5e1" stroke-width="2" />
-              <text x="110" y="126" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">0.040</text>
+              <rect x="90" y="130.5" width="40" height="59.5" fill="#64748b" opacity="0.8" rx="4" />
+              <line x1="110" y1="121" x2="110" y2="139" stroke="#64748b" stroke-width="2" />
+              <line x1="100" y1="121" x2="120" y2="121" stroke="#64748b" stroke-width="2" />
+              <line x1="100" y1="139" x2="120" y2="139" stroke="#64748b" stroke-width="2" />
+              <text x="110" y="126" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">0.040</text>
 
               <!-- Area 2: 0.0763 (height: 0.0763 * 1500 = 114.5px. y: 190 - 114.5 = 75.5) -->
-              <rect x="180" y="75.5" width="40" height="114.5" fill="#f59e0b" opacity="0.8" rx="4" />
-              <line x1="200" y1="41" x2="200" y2="105" stroke="#fbbf24" stroke-width="2" />
-              <line x1="190" y1="41" x2="210" y2="41" stroke="#fbbf24" stroke-width="2" />
-              <line x1="190" y1="105" x2="210" y2="105" stroke="#fbbf24" stroke-width="2" />
-              <text x="200" y="71" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">0.076</text>
+              <rect x="180" y="75.5" width="40" height="114.5" fill="#d97706" opacity="0.8" rx="4" />
+              <line x1="200" y1="41" x2="200" y2="105" stroke="#d97706" stroke-width="2" />
+              <line x1="190" y1="41" x2="210" y2="41" stroke="#d97706" stroke-width="2" />
+              <line x1="190" y1="105" x2="210" y2="105" stroke="#d97706" stroke-width="2" />
+              <text x="200" y="71" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">0.076</text>
 
               <!-- Area 3: 0.0761 (height: 0.0761 * 1500 = 114.2px. y: 190 - 114.2 = 75.8) -->
-              <rect x="270" y="75.8" width="40" height="114.2" fill="#f59e0b" opacity="0.8" rx="4" />
-              <line x1="290" y1="54" x2="290" y2="98" stroke="#fbbf24" stroke-width="2" />
-              <line x1="280" y1="54" x2="300" y2="54" stroke="#fbbf24" stroke-width="2" />
-              <line x1="280" y1="98" x2="300" y2="98" stroke="#fbbf24" stroke-width="2" />
-              <text x="290" y="71" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">0.076</text>
+              <rect x="270" y="75.8" width="40" height="114.2" fill="#d97706" opacity="0.8" rx="4" />
+              <line x1="290" y1="54" x2="290" y2="98" stroke="#d97706" stroke-width="2" />
+              <line x1="280" y1="54" x2="300" y2="54" stroke="#d97706" stroke-width="2" />
+              <line x1="280" y1="98" x2="300" y2="98" stroke="#d97706" stroke-width="2" />
+              <text x="290" y="71" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">0.076</text>
               
               <!-- X Axis Labels -->
-              <text x="110" y="215" fill="#e2e8f0" font-size="11" font-family="sans-serif" text-anchor="middle">Area 1</text>
-              <text x="200" y="215" fill="#e2e8f0" font-size="11" font-family="sans-serif" text-anchor="middle">Area 2</text>
-              <text x="290" y="215" fill="#e2e8f0" font-size="11" font-family="sans-serif" text-anchor="middle">Area 3</text>
+              <text x="110" y="215" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">Area 1</text>
+              <text x="200" y="215" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">Area 2</text>
+              <text x="290" y="215" fill="#475569" font-size="11" font-family="sans-serif" text-anchor="middle">Area 3</text>
             </svg>
           </div>
         </div>
@@ -999,41 +1002,41 @@ pairs[<span class="hl-str">"corrected_absolute_r"</span>] = np.abs(observed) - n
           <div class="chart-container">
             <svg viewBox="0 0 400 240" width="100%" height="100%">
               <!-- Grid lines -->
-              <line x1="60" y1="40" x2="360" y2="40" stroke="#334155" stroke-dasharray="3,3" />
-              <line x1="60" y1="115" x2="360" y2="115" stroke="#334155" />
-              <line x1="60" y1="190" x2="360" y2="190" stroke="#334155" stroke-dasharray="3,3" />
+              <line x1="60" y1="40" x2="360" y2="40" stroke="#e2e8f0" stroke-dasharray="3,3" />
+              <line x1="60" y1="115" x2="360" y2="115" stroke="#cbd5e1" />
+              <line x1="60" y1="190" x2="360" y2="190" stroke="#e2e8f0" stroke-dasharray="3,3" />
               
               <!-- Y Axis labels -->
-              <text x="50" y="44" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">+0.004</text>
-              <text x="50" y="119" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">0.000</text>
-              <text x="50" y="194" fill="#94a3b8" font-size="10" font-family="sans-serif" text-anchor="end">-0.004</text>
+              <text x="50" y="44" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">+0.004</text>
+              <text x="50" y="119" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">0.000</text>
+              <text x="50" y="194" fill="#64748b" font-size="10" font-family="sans-serif" text-anchor="end">-0.004</text>
               
               <!-- Bars -->
               <!-- 1to2: +0.001965 (height: 0.001965 * 18750 = 36.8px. y: 115 - 36.8 = 78.2) -->
-              <rect x="90" y="78.2" width="40" height="36.8" fill="#10b981" opacity="0.8" rx="4" />
-              <line x1="110" y1="42" x2="110" y2="103" stroke="#34d399" stroke-width="2" />
-              <line x1="100" y1="42" x2="120" y2="42" stroke="#34d399" stroke-width="2" />
-              <line x1="100" y1="103" x2="120" y2="103" stroke="#34d399" stroke-width="2" />
-              <text x="110" y="72" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">+0.002</text>
+              <rect x="90" y="78.2" width="40" height="36.8" fill="#059669" opacity="0.8" rx="4" />
+              <line x1="110" y1="42" x2="110" y2="103" stroke="#059669" stroke-width="2" />
+              <line x1="100" y1="42" x2="120" y2="42" stroke="#059669" stroke-width="2" />
+              <line x1="100" y1="103" x2="120" y2="103" stroke="#059669" stroke-width="2" />
+              <text x="110" y="72" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">+0.002</text>
 
               <!-- 3to2: -0.002229 (height: 0.002229 * 18750 = 41.8px. y: 115) -->
-              <rect x="180" y="115" width="40" height="41.8" fill="#ef4444" opacity="0.6" rx="4" />
-              <line x1="200" y1="92" x2="200" y2="136" stroke="#f87171" stroke-width="2" />
-              <line x1="190" y1="92" x2="210" y2="92" stroke="#f87171" stroke-width="2" />
-              <line x1="190" y1="136" x2="210" y2="136" stroke="#f87171" stroke-width="2" />
-              <text x="200" y="172" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">-0.002</text>
+              <rect x="180" y="115" width="40" height="41.8" fill="#dc2626" opacity="0.8" rx="4" />
+              <line x1="200" y1="92" x2="200" y2="136" stroke="#dc2626" stroke-width="2" />
+              <line x1="190" y1="92" x2="210" y2="92" stroke="#dc2626" stroke-width="2" />
+              <line x1="190" y1="136" x2="210" y2="136" stroke="#dc2626" stroke-width="2" />
+              <text x="200" y="172" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">-0.002</text>
 
               <!-- 3to1: -0.000381 (height: 0.000381 * 18750 = 7.1px. y: 115) -->
-              <rect x="270" y="115" width="40" height="7.1" fill="#64748b" opacity="0.6" rx="4" />
-              <line x1="290" y1="109" x2="290" y2="136" stroke="#cbd5e1" stroke-width="2" />
-              <line x1="280" y1="109" x2="300" y2="109" stroke="#cbd5e1" stroke-width="2" />
-              <line x1="280" y1="136" x2="300" y2="136" stroke="#cbd5e1" stroke-width="2" />
-              <text x="290" y="152" fill="#f8fafc" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">-0.000</text>
+              <rect x="270" y="115" width="40" height="7.1" fill="#64748b" opacity="0.8" rx="4" />
+              <line x1="290" y1="109" x2="290" y2="136" stroke="#64748b" stroke-width="2" />
+              <line x1="280" y1="109" x2="300" y2="109" stroke="#64748b" stroke-width="2" />
+              <line x1="280" y1="136" x2="300" y2="136" stroke="#64748b" stroke-width="2" />
+              <text x="290" y="152" fill="#ffffff" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">-0.000</text>
               
               <!-- X Axis Labels -->
-              <text x="110" y="215" fill="#e2e8f0" font-size="10" font-family="sans-serif" text-anchor="middle">1 → 2</text>
-              <text x="200" y="215" fill="#e2e8f0" font-size="10" font-family="sans-serif" text-anchor="middle">3 → 2</text>
-              <text x="290" y="215" fill="#e2e8f0" font-size="10" font-family="sans-serif" text-anchor="middle">3 → 1</text>
+              <text x="110" y="215" fill="#475569" font-size="10" font-family="sans-serif" text-anchor="middle">1 → 2</text>
+              <text x="200" y="215" fill="#475569" font-size="10" font-family="sans-serif" text-anchor="middle">3 → 2</text>
+              <text x="290" y="215" fill="#475569" font-size="10" font-family="sans-serif" text-anchor="middle">3 → 1</text>
             </svg>
           </div>
         </div>
