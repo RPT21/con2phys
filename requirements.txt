@@ -10,3 +10,4 @@ statsmodels
 neurodsp
 mne
 pynapple
+openpyxl
