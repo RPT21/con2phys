@@ -1,6 +1,7 @@
 matplotlib
 seaborn
 numpy
+mpld3
 pandas
 pandas-stubs
 scipy
@@ -13,3 +14,5 @@ mne
 pynapple==0.11.3
 pynaviz==0.2.0
 openpyxl
+pyqt5
+pyqtgraph
