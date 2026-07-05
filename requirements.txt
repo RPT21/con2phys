@@ -1,6 +1,8 @@
 matplotlib
 seaborn
 numpy
+mpld3
+openpyxl
 pandas
 pandas-stubs
 scipy
@@ -11,3 +13,5 @@ neurodsp
 mne
 pynapple
 openpyxl
+pyqt5
+pyqtgraph
