@@ -146,12 +146,3 @@ if plot or True:
 
     win.show()
     app.exec_()
-
-# Loading the data
-lfps = [np.load(lfp_folder / f) for f in lfp_files]
-
-for i, lfp in enumerate(lfps, start=1):
-    print(f"LFP{i}: shape {lfp.shape}, duration {lfp.shape[1]/fs:.1f} sec ({lfp.shape[1]/fs/60:.1f} min), "
-          f"channels {lfp.shape[0]}")
-
-
