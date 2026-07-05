@@ -7,7 +7,9 @@ scipy
 scipy-stubs
 scikit-learn
 statsmodels
+tensorflow
 neurodsp
 mne
-pynapple
+pynapple==0.11.3
+pynaviz==0.2.0
 openpyxl
